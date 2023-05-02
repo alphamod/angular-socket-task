@@ -1,0 +1,18 @@
+<div class="modal-container">
+  <h1 mat-dialog-title>{{ rowData.First }} {{ rowData.Last }}</h1>
+  <mat-dialog-content class="modal-content">
+    <mat-card class="modal-card">
+      <mat-card-content>
+        <table>
+          <tr *ngFor="let key of dataKeys">
+            <td>{{ key }}</td>
+            <td>{{ rowData[key] }}</td>
+          </tr>
+        </table>
+      </mat-card-content>
+    </mat-card>
+    <div class="btn-container" mat-dialog-actions>
+      <button mat-raised-button (click)="onClose()">Close</button>
+    </div>
+  </mat-dialog-content>
+</div>

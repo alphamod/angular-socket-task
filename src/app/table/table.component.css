@@ -1,0 +1,22 @@
+.container {
+    padding: 1em;
+}
+
+table {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+.table-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-row:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
